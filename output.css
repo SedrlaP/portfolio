@@ -558,29 +558,18 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
 .top-1\/2 {
   top: 50%;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.-mt-20 {
-  margin-top: -5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mt-10 {
@@ -599,12 +588,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -615,20 +604,12 @@ video {
   height: 1.5rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-2\/5 {
-  width: 40%;
 }
 
 .w-6 {
@@ -660,6 +641,10 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .items-center {
   align-items: center;
 }
@@ -674,6 +659,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .self-center {
@@ -710,14 +699,14 @@ video {
   background-color: rgb(204 235 255 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-2 {
@@ -796,6 +785,10 @@ video {
   transition-duration: 300ms;
 }
 
+body {
+  background-image: url("./media/background-image.svg");
+}
+
 .hover\:bg-\[\#0E86D4\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(14 134 212 / var(--tw-bg-opacity));
@@ -804,6 +797,41 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1080px) {
+  .desktop\:absolute {
+    position: absolute;
+  }
+
+  .desktop\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .desktop\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .desktop\:-mt-20 {
+    margin-top: -5rem;
+  }
+
+  .desktop\:block {
+    display: block;
+  }
+
+  .desktop\:hidden {
+    display: none;
+  }
+
+  .desktop\:w-2\/5 {
+    width: 40%;
+  }
+
+  .desktop\:flex-row {
+    flex-direction: row;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

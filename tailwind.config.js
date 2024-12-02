@@ -5,7 +5,15 @@ module.exports = {
     "!node_modules"
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'mobile-xs': '240px',
+        'mobile-sm': '370px',
+        'mobile-md': '400px',
+        'tablet': '640px',
+        'desktop': '1080px'
+      }
+    },
   },
   plugins: [],
 }
