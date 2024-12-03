@@ -592,12 +592,20 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-6 {
@@ -610,6 +618,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-6 {
@@ -637,6 +649,34 @@ video {
   animation: bounce 1s infinite;
 }
 
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-flow-col-dense {
+  grid-auto-flow: column dense;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -645,8 +685,24 @@ video {
   flex-direction: column-reverse;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -659,6 +715,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .self-start {
@@ -799,6 +859,42 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 240px) {
+  @media not all and (min-width: 1080px) {
+    .mobile-xs\:max-desktop\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media not all and (min-width: 640px) {
+    .mobile-xs\:max-tablet\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media not all and (min-width: 400px) {
+    .mobile-xs\:max-mobile-md\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (min-width: 370px) {
+  .mobile-sm\:gap-4 {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .tablet\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .tablet\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1080px) {
   .desktop\:absolute {
     position: absolute;
@@ -825,12 +921,36 @@ body {
     display: none;
   }
 
+  .desktop\:h-10 {
+    height: 2.5rem;
+  }
+
+  .desktop\:w-10 {
+    width: 2.5rem;
+  }
+
   .desktop\:w-2\/5 {
     width: 40%;
   }
 
+  .desktop\:grid-flow-row {
+    grid-auto-flow: row;
+  }
+
+  .desktop\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .desktop\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
   .desktop\:flex-row {
     flex-direction: row;
+  }
+
+  .desktop\:gap-4 {
+    gap: 1rem;
   }
 }
 
@@ -840,9 +960,91 @@ body {
   }
 }
 
+.\[\&_div\]\:px-4 div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.\[\&_div\]\:py-3 div {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.\[\&_div\]\:px-3 div {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.\[\&_div\]\:py-2 div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 370px) {
+  .mobile-sm\:\[\&_div\]\:px-4 div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mobile-sm\:\[\&_div\]\:py-3 div {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
 .\[\&_img\]\:mx-2 img {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.\[\&_img\]\:h-10 img {
+  height: 2.5rem;
+}
+
+.\[\&_img\]\:h-4 img {
+  height: 1rem;
+}
+
+.\[\&_img\]\:h-6 img {
+  height: 1.5rem;
+}
+
+.\[\&_img\]\:h-8 img {
+  height: 2rem;
+}
+
+.\[\&_img\]\:w-10 img {
+  width: 2.5rem;
+}
+
+.\[\&_img\]\:w-4 img {
+  width: 1rem;
+}
+
+.\[\&_img\]\:w-6 img {
+  width: 1.5rem;
+}
+
+.\[\&_img\]\:w-8 img {
+  width: 2rem;
+}
+
+@media (min-width: 1080px) {
+  .desktop\:\[\&_img\]\:h-10 img {
+    height: 2.5rem;
+  }
+
+  .desktop\:\[\&_img\]\:w-10 img {
+    width: 2.5rem;
+  }
+}
+
+.\[\&_svg\]\:h-10 svg {
+  height: 2.5rem;
+}
+
+.\[\&_svg\]\:w-10 svg {
+  width: 2.5rem;
 }
 
 .\[\&_svg\]\:transition-transform svg {
