@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -588,6 +588,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -604,12 +608,20 @@ video {
   height: 2.5rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-6 {
   height: 1.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .min-h-screen {
@@ -620,12 +632,20 @@ video {
   width: 2.5rem;
 }
 
-.w-4 {
-  width: 1rem;
-}
-
 .w-6 {
   width: 1.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .-translate-y-1\/2 {
@@ -649,32 +669,16 @@ video {
   animation: bounce 1s infinite;
 }
 
-.grid-flow-row {
-  grid-auto-flow: row;
-}
-
 .grid-flow-col {
   grid-auto-flow: column;
 }
 
-.grid-flow-col-dense {
-  grid-auto-flow: column dense;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -685,28 +689,16 @@ video {
   flex-direction: column-reverse;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.content-center {
-  align-content: center;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-10 {
@@ -715,10 +707,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .self-start {
@@ -751,17 +739,27 @@ video {
 
 .border-black {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#CCEBFF\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(204 235 255 / var(--tw-bg-opacity));
+  background-color: rgb(204 235 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
 }
 
 .object-contain {
@@ -787,11 +785,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -808,7 +801,7 @@ video {
 
 .text-\[\#0E86D4\] {
   --tw-text-opacity: 1;
-  color: rgb(14 134 212 / var(--tw-text-opacity));
+  color: rgb(14 134 212 / var(--tw-text-opacity, 1));
 }
 
 .shadow-\[4px_4px_4px_0px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
@@ -851,29 +844,17 @@ body {
 
 .hover\:bg-\[\#0E86D4\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(14 134 212 / var(--tw-bg-opacity));
+  background-color: rgb(14 134 212 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 240px) {
-  @media not all and (min-width: 1080px) {
-    .mobile-xs\:max-desktop\:grid-cols-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-
   @media not all and (min-width: 640px) {
     .mobile-xs\:max-tablet\:grid-cols-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-
-  @media not all and (min-width: 400px) {
-    .mobile-xs\:max-mobile-md\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
@@ -881,6 +862,16 @@ body {
 
 @media (min-width: 370px) {
   .mobile-sm\:gap-4 {
+    gap: 1rem;
+  }
+
+  .mobile-sm\:gap-2 {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .mobile-md\:gap-4 {
     gap: 1rem;
   }
 }
@@ -909,6 +900,11 @@ body {
     margin-right: 0px;
   }
 
+  .desktop\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .desktop\:-mt-20 {
     margin-top: -5rem;
   }
@@ -921,36 +917,32 @@ body {
     display: none;
   }
 
-  .desktop\:h-10 {
-    height: 2.5rem;
+  .desktop\:h-12 {
+    height: 3rem;
   }
 
-  .desktop\:w-10 {
-    width: 2.5rem;
+  .desktop\:h-14 {
+    height: 3.5rem;
+  }
+
+  .desktop\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .desktop\:w-12 {
+    width: 3rem;
   }
 
   .desktop\:w-2\/5 {
     width: 40%;
   }
 
-  .desktop\:grid-flow-row {
-    grid-auto-flow: row;
-  }
-
-  .desktop\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-
-  .desktop\:grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
+  .desktop\:w-14 {
+    width: 3.5rem;
   }
 
   .desktop\:flex-row {
     flex-direction: row;
-  }
-
-  .desktop\:gap-4 {
-    gap: 1rem;
   }
 }
 
@@ -958,16 +950,6 @@ body {
   .dark\:ring-slate-200\/20 {
     --tw-ring-color: rgb(226 232 240 / 0.2);
   }
-}
-
-.\[\&_div\]\:px-4 div {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.\[\&_div\]\:py-3 div {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .\[\&_div\]\:px-3 div {
@@ -992,6 +974,18 @@ body {
   }
 }
 
+@media (min-width: 400px) {
+  .mobile-md\:\[\&_div\]\:px-4 div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mobile-md\:\[\&_div\]\:py-3 div {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
 .\[\&_img\]\:mx-2 img {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1001,42 +995,8 @@ body {
   height: 2.5rem;
 }
 
-.\[\&_img\]\:h-4 img {
-  height: 1rem;
-}
-
-.\[\&_img\]\:h-6 img {
-  height: 1.5rem;
-}
-
-.\[\&_img\]\:h-8 img {
-  height: 2rem;
-}
-
 .\[\&_img\]\:w-10 img {
   width: 2.5rem;
-}
-
-.\[\&_img\]\:w-4 img {
-  width: 1rem;
-}
-
-.\[\&_img\]\:w-6 img {
-  width: 1.5rem;
-}
-
-.\[\&_img\]\:w-8 img {
-  width: 2rem;
-}
-
-@media (min-width: 1080px) {
-  .desktop\:\[\&_img\]\:h-10 img {
-    height: 2.5rem;
-  }
-
-  .desktop\:\[\&_img\]\:w-10 img {
-    width: 2.5rem;
-  }
 }
 
 .\[\&_svg\]\:h-10 svg {
