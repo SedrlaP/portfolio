@@ -379,6 +379,9 @@
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -499,6 +502,11 @@
       position: absolute;
     }
   }
+  .desktop\:top-10 {
+    @media (width >= 1080px) {
+      top: calc(var(--spacing) * 10);
+    }
+  }
   .desktop\:bottom-0 {
     @media (width >= 1080px) {
       bottom: calc(var(--spacing) * 0);
@@ -562,6 +570,16 @@
   .desktop\:flex-row {
     @media (width >= 1080px) {
       flex-direction: row;
+    }
+  }
+  .desktop\:py-0 {
+    @media (width >= 1080px) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .desktop\:pb-10 {
+    @media (width >= 1080px) {
+      padding-bottom: calc(var(--spacing) * 10);
     }
   }
   .dark\:ring-slate-200\/20 {
