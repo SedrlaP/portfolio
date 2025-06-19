@@ -16,15 +16,15 @@ async function setLanguage(lang) {
 
     document.querySelectorAll('.lang-btn').forEach((btn) => {
         btn.classList.remove('bg-[#0E86D4]', 'text-white');
-        btn.classList.add('bg-[#CCEBFF]', 'hover:bg-[#0E86D4]', 'hover:text-white');
+        btn.classList.add('hover:bg-[#0E86D4]', 'hover:text-white');
     });
 
     const activeBtn = document.getElementById(`btn-${lang}`);
-    activeBtn.classList.remove('bg-[#CCEBFF]', 'hover:bg-[#0E86D4]', 'hover:text-white');
+    activeBtn.classList.remove('hover:bg-[#0E86D4]', 'hover:text-white');
     activeBtn.classList.add('bg-[#0E86D4]', 'text-white');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('language') || 'en';
+  const savedLang = localStorage.getItem('language') || 'cs';
   setLanguage(savedLang);
 });
