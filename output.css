@@ -373,6 +373,9 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
@@ -509,6 +512,11 @@
   .desktop\:-mt-20 {
     @media (width >= 1080px) {
       margin-top: calc(var(--spacing) * -20);
+    }
+  }
+  .desktop\:mt-20 {
+    @media (width >= 1080px) {
+      margin-top: calc(var(--spacing) * 20);
     }
   }
   .desktop\:block {
