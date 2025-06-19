@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,16 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="flex flex-col items-center">
+    <header class="mt-20 flex flex-row gap-4">
+        <button id="btn-cs" class="lang-btn py-2 px-4 flex flex-row gap-2 cursor-pointer [&_svg]:w-6 self-center rounded-lg bg-[#0E86D4] text-white transition duration-300" onclick="setLanguage('cs')">
+            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 51.28 35.67"><g fill-rule="nonzero"><path fill="#D7141A" d="M51.28 17.84v15.01a2.83 2.83 0 0 1-2.82 2.82H2.82A2.83 2.83 0 0 1 0 32.85V17.84h51.28z"/><path fill="#fff" d="M51.28 17.84H0V2.82A2.83 2.83 0 0 1 2.82 0h45.64a2.83 2.83 0 0 1 2.82 2.82v15.02z"/><path fill="#11457E" d="M25.64 17.84.57 1.12C.21 1.6 0 2.18 0 2.82v30.03c0 .64.21 1.23.57 1.7l25.07-16.71z"/></g></svg>
+            <span>Česky</span>
+        </button>
+        <button id="btn-en" class="lang-btn py-2 px-4 flex flex-row gap-2 cursor-pointer [&_svg]:w-6 self-center rounded-lg bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" onclick="setLanguage('en')">
+            <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.2 38.4" style="enable-background:new 0 0 55.2 38.4" xml:space="preserve"><style type="text/css">.st0{fill:#FEFEFE;} .st1{fill:#C8102E;} .st2{fill:#012169;}</style><g><path class="st0" d="M2.87,38.4h49.46c1.59-0.09,2.87-1.42,2.87-3.03V3.03c0-1.66-1.35-3.02-3.01-3.03H3.01 C1.35,0.01,0,1.37,0,3.03v32.33C0,36.98,1.28,38.31,2.87,38.4L2.87,38.4z"/><polygon class="st1" points="23.74,23.03 23.74,38.4 31.42,38.4 31.42,23.03 55.2,23.03 55.2,15.35 31.42,15.35 31.42,0 23.74,0 23.74,15.35 0,15.35 0,23.03 23.74,23.03"/><path class="st2" d="M33.98,12.43V0h18.23c1.26,0.02,2.34,0.81,2.78,1.92L33.98,12.43L33.98,12.43z"/><path class="st2" d="M33.98,25.97V38.4h18.35c1.21-0.07,2.23-0.85,2.66-1.92L33.98,25.97L33.98,25.97z"/><path class="st2" d="M21.18,25.97V38.4H2.87c-1.21-0.07-2.24-0.85-2.66-1.94L21.18,25.97L21.18,25.97z"/><path class="st2" d="M21.18,12.43V0H2.99C1.73,0.02,0.64,0.82,0.21,1.94L21.18,12.43L21.18,12.43z"/><polygon class="st2" points="0,12.8 7.65,12.8 0,8.97 0,12.8"/><polygon class="st2" points="55.2,12.8 47.51,12.8 55.2,8.95 55.2,12.8"/><polygon class="st2" points="55.2,25.6 47.51,25.6 55.2,29.45 55.2,25.6"/><polygon class="st2" points="0,25.6 7.65,25.6 0,29.43 0,25.6"/><polygon class="st1" points="55.2,3.25 36.15,12.8 40.41,12.8 55.2,5.4 55.2,3.25"/><polygon class="st1" points="19.01,25.6 14.75,25.6 0,32.98 0,35.13 19.05,25.6 19.01,25.6"/><polygon class="st1" points="10.52,12.81 14.78,12.81 0,5.41 0,7.55 10.52,12.81"/><polygon class="st1" points="44.63,25.59 40.37,25.59 55.2,33.02 55.2,30.88 44.63,25.59"/></g></svg>
+            <span>English</span>
+        </button>
+    </header>
     <div class="hidden desktop:block fixed top-1/2 -translate-y-1/2 shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-sm self-start">
         <div class="flex flex-col bg-white gap-10 p-4 [&_svg]:w-10 [&_svg]:h-10">    
             <a href="https://cz.linkedin.com/in/prokop-%C5%A1edrla-87b692273" target="_blank" class="[&_svg]:hover:scale-125 [&_svg]:transition-transform [&_svg]:ease-in-out [&_svg]:duration-500"><svg role="img" xmlns="http://www.w3.org/2000/svg"  shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64"><title>LinkedIn</title><rect width="512" height="509.64" rx="115.61" ry="115.61"/><path fill="#fff" d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"/></svg></a>
@@ -17,8 +27,8 @@
     <div class="desktop:min-h-screen flex flex-col-reverse justify-center items-center gap-4 desktop:flex-row desktop:mx-0">
         <div class="flex flex-col items-center">
             <div class="flex flex-col">
-                <p class="text-3xl">Zdravím!</p>
-                <p class="text-3xl">Jsem <span class="text-[#0E86D4]">Prokop Šedrla</span></p>
+                <p class="text-3xl" data-i18n="greeting">Zdravím!</p>
+                <p class="text-3xl" data-i18n="name">Jsem <span class="text-[#0E86D4]">Prokop Šedrla</span></p>
             </div>
             <p class="mt-6 text-xl"><span class="text-[#0E86D4]">Junior</span> web <span class="text-[#0E86D4]">developer</span></p>
             <div class="desktop:hidden flex mt-4 gap-10 p-4 [&_svg]:w-10 [&_svg]:h-10">    
@@ -55,8 +65,8 @@
         <div class="flex flex-col desktop:w-2/5 mx-4 desktop:mx-0 border-2 bg-white border-black gap-4 overflow-hidden rounded-lg">
             <div class="py-2 px-4">
                 <h4 class="font-semibold text-xl">Managry</h4>
-                <p class="mt-2">Tento web je součástí mé práce ve společnosti Managry, kde pracuji na vývoji webových stránek v roli <strong>full-stack</strong> developera. Na své pozici udržuji <strong>databázový model</strong> a spravuji <strong>administrační rozhraní</strong>. Zajišťuji <strong>responzivní design</strong> pro optimální zobrazení na různých zařízeních. Využívám <strong>Celery pro asynchronní zpracování úloh</strong>, např. odesílání e-mailů. Implementuji <strong>nákupní proces</strong> včetně integrace <strong>Stripe API</strong> pro <strong>platební transakce</strong>.</p>
-                <p class="font-semibold mt-4">Technologie:</p>
+                <p class="mt-2" data-i18n="managry-description">Tento web je součástí mé práce ve společnosti Managry, kde pracuji na vývoji webových stránek v roli <strong>full-stack</strong> developera. Na své pozici udržuji <strong>databázový model</strong> a spravuji <strong>administrační rozhraní</strong>. Zajišťuji <strong>responzivní design</strong> pro optimální zobrazení na různých zařízeních. Využívám <strong>Celery pro asynchronní zpracování úloh</strong>, např. odesílání e-mailů. Implementoval jsem <strong>nákupní proces</strong> včetně integrace <strong>Stripe API</strong> pro <strong>platební transakce</strong>. Také pracuji na <strong>kompletní lokalizaci</strong> webu do více jazyků, aby byl obsah i celkový uživatelský zážitek přístupný a jednotný pro návštěvníky z různých zemí.</p>
+                <p class="font-semibold mt-4" data-i18n="technologies">Použité technologie:</p>
                 <div class="mt-4 grid tablet:grid-flow-col mobile-xs:max-tablet:grid-cols-4 grid-rows-2 tablet:grid-rows-1 gap-4 justify-center [&_img]:mx-2 [&_img]:w-10 [&_img]:h-10">
                     <img src="./media/html-icon.svg" title="HTML"/>
                     <img src="./media/css-icon.svg" title="CSS"/>
@@ -67,14 +77,14 @@
 
                 </div>
             </div>
-            <a href="https://managry.com/" class="self-center rounded-lg py-2 px-4 bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" target="_blank">Přejít na web</a>
+            <a href="https://managry.com/" data-i18n="web-link" class="self-center rounded-lg py-2 px-4 bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" target="_blank">Přejít na web</a>
             <img src="./media/managry-web.png" />
         </div>
         <div class="flex flex-col desktop:w-2/5 mx-4 desktop:mx-0 border-2 bg-white border-black gap-4 overflow-hidden rounded-lg">
             <div class="py-2 px-4">
                 <h4 class="font-semibold text-xl">Autoservis Halas</h4>
-                <p class="mt-2">Tento web jsem vytvořil jako součást své praxe a je to jeden z prvních webů, který jsem úspěšně spustil na živém hostingu. Cílem bylo vytvořit moderní a funkční webovou stránku pro autoservis, ale také se zaměřit na zlepšení mých programátorských dovedností.</p>
-                <p class="font-semibold mt-4">Technologie:</p>
+                <p class="mt-2" data-i18n="autoservis-description">Tento web jsem vytvořil jako součást své praxe a je to jeden z prvních webů, který jsem úspěšně spustil na živém hostingu. Cílem bylo vytvořit moderní a funkční webovou stránku pro autoservis, ale také se zaměřit na zlepšení mých programátorských dovedností.</p>
+                <p class="font-semibold mt-4" data-i18n="technologies">Použité technologie:</p>
                 <div class="mt-4 grid grid-rows-1 grid-flow-col justify-center gap-4 [&_img]:mx-2 [&_img]:w-10 [&_img]:h-10">
                     <img src="./media/html-icon.svg" title="HTML"/>
                     <img src="./media/css-icon.svg" title="CSS"/>
@@ -82,15 +92,15 @@
                     <img src="./media/react-js-icon.svg" title="React"/>
                 </div>
             </div>
-            <a href="https://autoservishalas.cz/" class="self-center rounded-lg py-2 px-4 bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" target="_blank">Přejít na web</a>
+            <a href="https://autoservishalas.cz/" data-i18n="web-link" class="self-center rounded-lg py-2 px-4 bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" target="_blank">Přejít na web</a>
             <img src="./media/ahweb.png" />
         </div>
         
         <div class="mb-10 flex flex-col desktop:w-2/5 mx-4 desktop:mx-0 border-2 bg-white border-black gap-4 overflow-hidden rounded-lg">
             <div class="py-2 px-4">
                 <h4 class="font-semibold text-xl">Memory Game (Pexeso)</h4>
-                <p class="mt-2">Tento projekt je jednoduchá webová hra typu Memory Game (nebo Pexeso), kterou jsem vytvořil jako způsob procvičení a zlepšení mých dovedností.</p>
-                <p class="font-semibold mt-4">Technologie:</p>
+                <p class="mt-2" data-i18n="memory-game-description">Tento projekt je jednoduchá webová hra typu Memory Game (nebo Pexeso), kterou jsem navrhl jako způsob, jak si procvičit základy vývoje v Reactu – od component a state managementu, až po herní logiku a responzivní rozhraní.</p>
+                <p class="font-semibold mt-4" data-i18n="technologies">Použité technologie:</p>
                 <div class="mt-4 grid tablet:grid-flow-col mobile-xs:max-tablet:grid-cols-4 grid-rows-2 tablet:grid-rows-1 justify-center gap-4 [&_img]:mx-2 [&_img]:w-10 [&_img]:h-10">
                     <img src="./media/html-icon.svg" title="HTML"/>
                     <img src="./media/css-icon.svg" title="CSS"/>
@@ -99,9 +109,26 @@
                     <img src="./media/tailwind-css-icon.svg" title="Tailwind-css"/>
                 </div>
             </div>
-            <a href="https://sedrlap.github.io/pexeso/" class="self-center rounded-lg py-2 px-4 bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" target="_blank">Přejít na web</a>
+            <a href="https://sedrlap.github.io/pexeso/" data-i18n="web-link" class="self-center rounded-lg py-2 px-4 bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" target="_blank">Přejít na web</a>
             <img class="object-contain" src="./media/pexeso.png" />
         </div>
+
+        <div class="mb-10 flex flex-col desktop:w-2/5 mx-4 desktop:mx-0 border-2 bg-white border-black gap-4 overflow-hidden rounded-lg">
+            <div class="py-2 px-4">
+                <h4 class="font-semibold text-xl">Falling letters</h4>
+                <p class="mt-2" data-i18n="falling-letters-game-description">Falling Letters je jednoduchá hra, ve které padají písmena ze shora a hráč je musí stihnout stisknout dřív, než dopadnou na zem. Byl to můj první projekt s PixiJS a TypeScriptem, při kterém jsem se učil, jak využít PixiJS pro plynulé animace a efektivní rendering. Zároveň jsem řešil zpracování vstupu z klávesnice pro zachycení stisknutých písmen a správu herního stavu (game state) pro sledování skóre a průběhu hry. Projekt mi přinesl praktickou zkušenost s TypeScriptem a event-driven programmingem v herním prostředí.</p>
+                <p class="font-semibold mt-4" data-i18n="technologies">Použité technologie:</p>
+                <div class="mt-4 grid tablet:grid-flow-col mobile-xs:max-tablet:grid-cols-4 grid-rows-2 tablet:grid-rows-1 justify-center gap-4 [&_img]:mx-2 [&_img]:w-10 [&_img]:h-10">
+                    <img src="./media/html-icon.svg" title="HTML"/>
+                    <img src="./media/css-icon.svg" title="CSS"/>
+                    <img src="./media/typescript-programming-language-icon.svg" title="TypeScript"/>
+                    <img src="./media/pixijs-icon.svg" title="PixiJS"/>
+                </div>
+            </div>
+            <a href="https://sedrlap.github.io/falling-letters/" data-i18n="web-link" class="mb-6 self-center rounded-lg py-2 px-4 bg-[#CCEBFF] hover:bg-[#0E86D4] hover:text-white transition duration-300" target="_blank">Přejít na web</a>
+            
+        </div>
     </div>
+    <script src="js/lang.js"></script>
 </body>
 </html>

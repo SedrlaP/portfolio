@@ -1,0 +1,10 @@
+{
+    "greeting": "Zdravím!",
+    "name" : "Jsem <span class=\"text-[#0E86D4]\">Prokop Šedrla</span>",
+    "managry-description": "Tento web je součástí mé práce ve společnosti Managry, kde pracuji na vývoji webových stránek v roli <strong>full-stack</strong> developera. Na své pozici udržuji <strong>databázový model</strong> a spravuji <strong>administrační rozhraní</strong>. Zajišťuji <strong>responzivní design</strong> pro optimální zobrazení na různých zařízeních. Využívám <strong>Celery pro asynchronní zpracování úloh</strong>, např. odesílání e-mailů. Implementoval jsem <strong>nákupní proces</strong> včetně integrace <strong>Stripe API</strong> pro <strong>platební transakce</strong>. Také pracuji na <strong>kompletní lokalizaci</strong> webu do více jazyků, aby byl obsah i celkový uživatelský zážitek přístupný a jednotný pro návštěvníky z různých zemí.",
+    "web-link" : "Přejít na web",
+    "technologies": "Použité technologie:",
+    "autoservis-description": "Tento web jsem vytvořil jako součást své praxe a je to jeden z prvních webů, který jsem úspěšně spustil na živém hostingu. Cílem bylo vytvořit moderní a funkční webovou stránku pro autoservis, ale také se zaměřit na zlepšení mých programátorských dovedností.",
+    "memory-game-description": "Tento projekt je jednoduchá webová hra typu Memory Game (nebo Pexeso), kterou jsem navrhl jako způsob, jak si procvičit základy vývoje v Reactu – od component a state managementu, až po herní logiku a responzivní rozhraní.",
+    "falling-letters-game-description": "Falling Letters je jednoduchá hra, ve které padají písmena ze shora a hráč je musí stihnout stisknout dřív, než dopadnou na zem. Byl to můj první projekt s PixiJS a TypeScriptem, při kterém jsem se učil, jak využít PixiJS pro plynulé animace a efektivní rendering. Zároveň jsem řešil zpracování vstupu z klávesnice pro zachycení stisknutých písmen a správu herního stavu (game state) pro sledování skóre a průběhu hry. Projekt mi přinesl praktickou zkušenost s TypeScriptem a event-driven programmingem v herním prostředí."
+}

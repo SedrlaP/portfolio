@@ -1,0 +1,10 @@
+{
+    "greeting": "Hello!",
+    "name" : "I am <span class=\"text-[#0E86D4]\">Prokop Šedrla</span>",
+    "managry-description": "This website is part of my work at Managry, where I develop websites as a <strong>full-stack</strong> developer. In my role, I maintain the <strong>database model</strong> and manage the <strong>admin interface</strong>. I ensure <strong>responsive design</strong> for optimal display on various devices. I use <strong>Celery for asynchronous task processing</strong>, such as sending emails. I implemented the <strong>purchase process</strong>, including integration with the <strong>Stripe API</strong> for <strong>payment transactions</strong>. I'm also implementing the <strong>full localization</strong> of the website into multiple languages, ensuring content and user experience are <strong>accessible</strong> and <strong>consistent</strong> across different regions.",
+    "web-link" : "Go to website",
+    "technologies": "Used technologies:",
+    "autoservis-description": "I created this website as part of my self-learning journey, and it is one of the first websites I successfully launched on live hosting. My goal was to build a modern and functional site for a car repair shop, while also improving my programming skills.",
+    "memory-game-description": "This project is a simple web-based Memory Game (also known as Pexeso), which I designed as a way to practice the fundamentals of React development – from components and state management to game logic and responsive layout.",
+    "falling-letters-game-description": "Falling Letters is a simple typing game where letters fall from the top of the screen, and the player types them before they reach the bottom. It was my first project using PixiJS and TypeScript, so I spent a lot of time learning how to use the PixiJS rendering engine for smooth animations and efficient rendering. I also handled keyboard input to detect typed letters and managed game state to track score and progress. This project gave me practical experience with TypeScript’s type system and event-driven programming in a game context."
+}
